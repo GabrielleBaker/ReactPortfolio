@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FeaturedPostsw from './FeaturedPostSw';
 import MSAPP from './Images/Softwaredev/Moodscape/MSAPP.png';
-import Trainer from './Images/Softwaredev/./Trainer/Trainer.png';
+import trainerft from './Images/Softwaredev/./Trainer/trainerft.png';
 import Spot from './Images/Softwaredev/./Salesspot/Spot.png'
 import Featuredsw from './Images/Softwaredev/Featuredsw.png';
 import Box from '@mui/material/Box';
@@ -21,7 +21,7 @@ const featuredPosts = [
     url: '/Moodscape'
   },
   {
-    image: Trainer,
+    image: trainerft,
     imageLabel: 'Personal Trainer',
     url: '/PersonalTrainer'
   },

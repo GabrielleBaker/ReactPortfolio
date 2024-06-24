@@ -12,6 +12,7 @@ import Kit from './Images/Kit.png';
 import Moodscape from './Moodscape';
 import SalesSpot from './SalesSpot';
 import PersonalTrainer from './PersonalTrainer';
+import ScrollToTop from "react-scroll-to-top";
 
 const sections = [
 
@@ -31,6 +32,10 @@ function App() {
         <Container maxWidth="lg">
           <Header image={Kit} sections={sections} />
           <main>
+            
+          <ScrollToTop smooth 
+          // scroll to top button for all pages
+          />
             <Routes>
               <Route path="/Software" element={<Software />} />
               <Route path="/Gamedev" element={<Gamedev />} />
@@ -42,7 +47,7 @@ function App() {
             
           </main>
         </Container>
-        <Footer title="Author: Kit Baker " description="19/06/2024" />
+        <Footer title="Author: Kit Baker " description="24/06/2024" />
       </Router>
     </ThemeProvider>
   );

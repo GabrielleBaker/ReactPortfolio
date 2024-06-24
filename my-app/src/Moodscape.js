@@ -2,90 +2,115 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CardMedia from '@mui/material/CardMedia';
-import Card from '@mui/material/Card';
-import Featuredsw from './Images/Softwaredev/Featuredsw.png';
 import MSAPP from './Images/Softwaredev/Moodscape/MSAPP.png';
 import Splash from './Images/Softwaredev/Moodscape/Splash.jpg';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import CarouselComponent from './Carousel';
+import signup from './Images/Softwaredev/Moodscape/signup.jpg';
+import login from './Images/Softwaredev/Moodscape/login.jpg';
+import newlogform from './Images/Softwaredev/Moodscape/newlogform.jpg';
+import home from './Images/Softwaredev/Moodscape/home.jpg';
+import datepick from './Images/Softwaredev/Moodscape/datepick.jpg';
+import calendar from './Images/Softwaredev/Moodscape/calendar.jpg';
+import modalcalendar from './Images/Softwaredev/Moodscape/modalcalendar.jpg';
+import helplines from './Images/Softwaredev/Moodscape/helplines.jpg';
+import mapmodal from './Images/Softwaredev/Moodscape/mapmodal.jpg';
+import YTComponent from './YTVideo';
+import GHButton from './GithubButton';
+
+
+//images for the carousel
+const images =[
+  {
+   src: MSAPP, alt: 'MSAPP Image', legend:''
+  },
+  {
+    src: Splash, alt: 'Splash Image', legend:'Splash'
+  },
+  {
+    src: signup, alt: 'Signup Image', legend:'Sign up'
+  },
+  {
+    src: login, alt: 'Login Image', legend:'Sign in'
+  },
+  {
+    src: newlogform, alt: 'New Log Image', legend:'New Log'
+  },
+  {
+    src: datepick, alt: 'Date Picker Image', legend:'Date Picker'
+  },
+  {
+    src: home, alt: 'Home Image', legend:'Home page- Log entries'
+  },
+  {
+    src: calendar, alt: 'Calendar Image', legend:'Calendar Page'
+  },
+  {
+    src: modalcalendar, alt: 'Calendar Modal Image', legend:'Calendar Info Modal'
+  },
+  {
+    src: helplines, alt: 'Helplines Image', legend:'Emergency Helplines'
+  },
+  {
+    src: mapmodal, alt: 'Helpline Map Modal Image', legend:'Emergency location sharing map'
+  },
+];
+
+//link for YT video
+const link =[
+  "https://www.youtube.com/embed/sNKVWTlsRRg?si=6zXSdBkMyWmfzX36"
+]
+
+
+
 const defaultTheme = createTheme();
 
 export default function Moodscape() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-  
       <Container maxWidth="lg">
-    
         <main>
-        <Card sx={{ position: 'relative',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-       
-           }}>
-          <CardMedia
-            component="img"
-            sx={{  width:'100%' , display: {  sm: 'block' } }}
-            image={MSAPP}
-          
-            
-          />
+        
+        <CarouselComponent images={images}/>
+        <h1>About Moodscape</h1>
+        <GHButton link='https://github.com/GabrielleBaker/Moodscape/tree/master'/>
+          <p>
+          Moodscape is a mobile application I developed for my mobile programming course at Haaga Helia. 
+          <br></br>
+          Moodscape allows users to track their moods over time to prevent dangerous episodes.
+          <br></br>
+          The project involved leveraging React Native, Expo SDK, and Firebase to create a 
+          functional app for individuals with mood disturbances like bipolar disorder. 
+          </p>
 
-        </Card>
-   
-    
-        <h2>Video Demo and code walkthrough: </h2>
-        <iframe width="640" height="390" 
-        src="https://www.youtube.com/embed/sNKVWTlsRRg?si=6zXSdBkMyWmfzX36" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe>
+        <h2>Project & Course Grading</h2>
+          <p>
+            Project Grade: 4.5
+            <br></br>
+            Course Grade: 5
+          </p>
 
-           <h3>About:</h3>
-        <p>
-        Moodscape is a project I did for my mobile programming course at Haaga Helia.
-        The mobile programming course consisted of utilizing React Native, Expo SDK and live databases.
-        Our task was to create a mobile application using React Native and any libraries we found useful.
-        Moodscape functions as a mobile application for individuals suffering from mood disturbances, such as bipolar.
-        The purpose of the app is to allow for users to track their moods over time, to prevent any dangerous episodes. This app utilizes Firebase realtime database and firebase authentication to allow users to log in and record their mood logs.
-        This app also contained a page for emergencies, with helplines that open in the mobile device call center and a map modal that allows for user location sharing.
-        Grade received for this project:4.5
-        Course grade: 5
-        A list of technologies used for this project: React Native: React Native UUID, React native phone call, React Native Maps, React Native Community Date Picker, React Native Community slider, React Native Calendar, React Native Popup Modal, React Native Simple Toast, React Navigation, React Native Linking
-        Expo: Expo icons, Expo Date Time Picker, Expo slider, Expo Location, Expo Status Bar
-        Firebase: Firebase Auth, Firebase Realtime Database
-        </p>
-  
+        <h2>Video Demo and Code Walkthrough: </h2>
+        <YTComponent link={link}/>
 
-        <Carousel //still a mess https://www.npmjs.com/package/react-responsive-carousel
-        //need to figure out sizing and turn it into its own component to reuse on each project
-         >
-                <div>
-                    <img src={Splash } height= '500x' width='300px' position='center'
-                 />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                <img src={Splash}   height= '500x' width='300px' position='center'  />
-                    <p className="legend">Legend 2</p>
+        <h3>Features:</h3>
+          <p>
+          Mood Tracking: Users can log their moods, utilizing a date picker, a mood slider and note form. 
+          Realtime Database: Data from each log is stored in a Firebase Realtime Database.
+          User Authentication: Secure sign up & login functionality via Firebase Authentication.
+          Emergency Assistance: A dedicated page with helplines that directly open in the phone's call center and a map modal for location sharing.
+          Viewing Logs by Calendar: A calendar view allows users to track the progression of moods over time at a glance.
+          </p>
 
-                </div>
-                <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel>
-         
-         
+        <h3>Technical Implementation:</h3>
+          <p>
+          React Native: UUID, phone call, maps, date picker, slider, calendar, popup modal, simple toast, navigation, and linking.
+          Expo: Icons, date time picker, slider, location, and status bar.
+          Firebase: Authentication and Realtime Database.
+          </p>
         </main>
       </Container>
       
-   
-     
     </ThemeProvider>
   );
 }
