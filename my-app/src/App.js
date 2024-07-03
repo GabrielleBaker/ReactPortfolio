@@ -14,14 +14,16 @@ import Moodscape from './SwDev/Moodscape';
 import SalesSpot from './SwDev/SalesSpot';
 import PersonalTrainer from './SwDev/PersonalTrainer';
 import ScrollToTop from "react-scroll-to-top";
+import SukiScroller from './GDev/SukiScroller';
+import SVAH from './GDev/SVAH';
+import Lavaland from './GDev/LavaLand';
+import SmallWorld from './GDev/SmallWorld';
 
 const sections = [
   {title: 'Home', url: '/Home'},
   { title: 'Software Dev', url: '/Software' },
   { title: 'Game Dev', url: '/Gamedev' },
   {title: 'Blender', url: '/Blender'},
-  
-  
 ];
 
 const defaultTheme = createTheme();
@@ -40,12 +42,21 @@ function App() {
           />
             <Routes>
               <Route path="/Software" element={<Software />} />
-              <Route path="/Gamedev" element={<Gamedev />} />
-              <Route path="/Home" element={<Home />}></Route>
-              <Route path="/Blender" element={<Blender/>}></Route>
               <Route path="/Moodscape" element={<Moodscape/>}/>
               <Route path="/SalesSpot" element={<SalesSpot/>}/>
               <Route path="/PersonalTrainer" element={<PersonalTrainer/>}/>
+
+              <Route path="/Gamedev" element={<Gamedev />} />
+              <Route path="/SukiScroller" element={<SukiScroller/>}/>
+              <Route path="/Lavaland" element={<Lavaland/>}/>
+              <Route path="/SVAH" element={<SVAH/>}/>
+              <Route path="/SmallWorld" element={<SmallWorld/>}/>
+
+              <Route path="/Home" element={<Home />}></Route>
+
+              <Route path="/Blender" element={<Blender/>}></Route>
+              
+
             </Routes>
             
           </main>

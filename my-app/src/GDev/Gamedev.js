@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import SSFeatured from '../Images/Gamedev/Suki/SSFeatured.png'
 import SmallWorld from '../Images/Gamedev/SmallWorld/SmallWorld.png';
 import LL from '../Images/Gamedev/Lavaland/LL.png';
+
 //game dev project section
 
 //featured projects
@@ -17,25 +18,29 @@ const featuredPosts = [
   {
     image: SSFeatured,
     imageLabel: 'Suki Scroller',
+    url: '/SukiScroller'
     
   },
   {
     image: SmallWorld,
     imageLabel: 'Small World',
+    url:'/SmallWorld'
   },
   {
     image: WHSDVATFeature,
     imageLabel: 'whsdvat',
+    url: '/SVAT'
   },
   {
     image: LL,
-    imageLabel: 'Lavaland'
+    imageLabel: 'Lavaland',
+    url:'/Lavaland'
   }
 ];
 
 const defaultTheme = createTheme();
 
-export default function Blog() {
+export default function Gamedev() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
