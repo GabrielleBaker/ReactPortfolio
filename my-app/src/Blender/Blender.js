@@ -3,13 +3,13 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import FeaturedPostsw from './components/FeaturedPostSw';
-import WHSDVATFeature from './Images/Gamedev/WHSDVAT/WHSDVATFeature.png'
-import Featuredblnd from './Images/Blender/AFTBlnd.png';
+import FeaturedPostsw from '../components/FeaturedPostSw';
+import WHSDVATFeature from '../Images/Gamedev/WHSDVAT/WHSDVATFeature.png'
+import Featuredblnd from '../Images/Blender/AFTBlnd.png';
 import Box from '@mui/material/Box';
-import SSFeatured from './Images/Gamedev/Suki/SSFeatured.png'
-import SmallWorld from './Images/Gamedev/SmallWorld/SmallWorld.png';
-import LL from './Images/Gamedev/Lavaland/LL.png';
+import SSFeatured from '../Images/Gamedev/Suki/SSFeatured.png'
+import SmallWorld from '../Images/Gamedev/SmallWorld/SmallWorld.png';
+import LL from '../Images/Gamedev/Lavaland/LL.png';
 //blender project section
 
 //featured projects

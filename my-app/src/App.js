@@ -5,14 +5,14 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Gamedev from './Gamedev';
-import Blender from './Blender';
-import Software from './Software';
+import Gamedev from './GDev/Gamedev';
+import Blender from './Blender/Blender';
+import Software from './SwDev/Software';
 import Home from './Home';
 import Kit from './Images/Kit.png';
-import Moodscape from './Moodscape';
-import SalesSpot from './SalesSpot';
-import PersonalTrainer from './PersonalTrainer';
+import Moodscape from './SwDev/Moodscape';
+import SalesSpot from './SwDev/SalesSpot';
+import PersonalTrainer from './SwDev/PersonalTrainer';
 import ScrollToTop from "react-scroll-to-top";
 
 const sections = [
