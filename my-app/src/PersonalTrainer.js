@@ -67,8 +67,18 @@ export default function Trainer() {
         <h1>About Personal Trainer</h1>
         <GHButton link='https://github.com/GabrielleBaker/Personal-Trainer/tree/main'/>
           <p>
-          As the final deliverable for my Front-End Programming course at Haaga Helia, 
-          I developed a comprehensive Personal Trainer program using React,
+          As the final deliverable for my
+          <a href='https://opinto-opas.haaga-helia.fi/course_unit/SWD4TF022' 
+              target="_blank"
+              rel="noopener noreferrer"
+              > Front-End Development  </a> 
+              course at 
+              <a href='https://www.haaga-helia.fi/en' 
+              target="_blank"
+              rel="noopener noreferrer"
+              >  Haaga Helia University of Applied Sciences. </a>
+          <br></br>
+          I developed a comprehensive Personal Trainer web app using React.js,
            which is deployed on GitHub Pages. 
            <br>
            </br>
@@ -106,21 +116,24 @@ export default function Trainer() {
                 Customer and Training Lists: Displays detailed lists of customers and their respective training schedules.
                 <br></br>
                 Export to CSV File: Customer information can be exported to a csv file.
-                Add New Customers and Trainings: Allows users to add new customers and create new training sessions.
+                <br></br>
+                Add New Customers and Trainings: Allows users to add new customers and create new training sessions pushing data.
                 <br></br>
                 Training Activities Graph: Visualize training activities through a graphical representation, providing insights into user preferences.
                 <br></br>
                 Calendar Integration
                 The app includes a calendar feature implemented with FullCalendar, offering:
-
+                <br></br>
                 Event Display: Shows training sessions on a calendar, making it easy to manage schedules.
+                <br></br>
                 Interactive Features: Allows users to interact with the calendar to view and modify events.
                
                 <br></br>                
                 <h4>API Integration</h4>
                 While the original API used for data fetching and management has been removed, the app was designed to:
-
+                <br></br>
                 Fetch Data: Retrieve training and customer data from a remote server.
+                <br></br>
                 Push Data: Send new and updated data to the server, ensuring real-time updates and synchronization.
                 <h4>Deployment</h4>
                 The application is deployed on GitHub Pages, ensuring accessibility and ease of updates.

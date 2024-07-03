@@ -99,7 +99,16 @@ export default function SalesSpot() {
         <GHButton link="https://github.com/GabrielleBaker/SalesSpot"></GHButton>
      
           <p>
-         
+          SalesSpot is a program I developed for the  
+          <a href='https://opinto-opas.haaga-helia.fi/course_unit/SWD4TF021' 
+              target="_blank"
+              rel="noopener noreferrer"
+              > Server Programming  </a> 
+              course at 
+              <a href='https://www.haaga-helia.fi/en' 
+              target="_blank"
+              rel="noopener noreferrer"
+              >  Haaga Helia University of Applied Sciences. </a>
           </p>
 
         <h2>Project & Course Grading</h2>

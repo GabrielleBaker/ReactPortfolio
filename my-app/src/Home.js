@@ -3,53 +3,108 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
-import Main from './Main';
-import Footer from './Footer';
-import post1 from './blog-post.1.md';
-import post2 from './blog-post.2.md';
-import post3 from './blog-post.3.md';
-
-
-const sections = [
-  { title: 'Software Development Projects', url: '#' },
-  { title: 'Game Development Projects', url: '#' },
-  { title: 'Blender Projects', url: '#' },
-
-];
+import  Kit from './Images/KitPFP.jpeg';
+import AboutKitt from './Images/AboutKitt.png';
+import flag from './Images/flag.png';
 
 const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
-  description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random?wallpapers',
-  imageText: 'main image description',
-  linkText: 'Continue reading…',
+  titleimage: AboutKitt,
+  description:(
+    <>
+    Kit (they/them) final year student at 
+    <a href='https://www.haaga-helia.fi/en' 
+        target="_blank"
+        rel="noopener noreferrer"
+        >  Haaga Helia University of Applied Sciences </a> 
+        completing a bachelors degree in 
+        <a 
+        href='https://www.haaga-helia.fi/en/bachelor/degree-programme-business-information-technology' 
+        target="_blank"
+        rel="noopener noreferrer"
+        > Business Information Technology. 
+        </a>
+    <br></br>
+    Majoring in Software Development, 
+    with special interest in Video Game Design & Development.
+    <br></br> 
+    Residing in the Helsinki area since 2020 with my partner and our dog.
+    </>
+    ),  
+  image: Kit,
+  imageText: 'Kit picture',
 };
 
 const featuredPosts = [
   {
-    title: 'Hi Im Kit (they/them)',
+    title: 'Programming Languages & Other Proficiencies',
    
-    description:
-      'A final year student at Haaga-Helia University of Applied Sciences (AMK) completing a bachelors degree in Business Information Technology. My major is in Software Engineering, with an additional focus on Video Game Development.',
-    image: 'https://source.unsplash.com/random?wallpapers',
-    imageLabel: 'Graduation date: fall 2024/ spring 2025',
+    description:(
+      <>
+      Java<br></br> 
+      Javascript<br></br>
+      C# (basic scripting for games in Unity)<br></br>
+      React.js & React Native<br></br>
+      HTML & CSS <br></br>
+      SQL <br></br>
+      Unity<br></br>
+      Blender  <br></br>
+      MS Azure <br></br>
+      MS Office Package (Word, Excel, PowerPoint)<br></br>
+      MySQL <br></br>
+      Springboot<br></br>
+  </>
+    )
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
-    description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random?wallpapers',
-    imageLabel: 'Image Text',
+    title: 'Education',
+   
+    description:(
+      <>
+      <a href='https://www.haaga-helia.fi/en' 
+        target="_blank"
+        rel="noopener noreferrer"
+        >  Haaga Helia University of Applied Sciences </a> 
+         <br></br>
+         <a 
+        href='https://www.haaga-helia.fi/en/bachelor/degree-programme-business-information-technology' 
+        target="_blank"
+        rel="noopener noreferrer"
+        > Business Information Technology. 
+        </a>
+      <br></br>
+      Graduation date: Fall 2024/ Spring 2025
+      <br></br> 
+      GPA: 4.67 
+      <br></br>
+      Transcript available on request.
+      </>
+    )
   },
+  {
+    title: 'Values & Strengths',
+   
+    description:(
+      <>
+      As part of the LGBTQIA+ community; 
+      intersectional equality and inclusivity are of 
+      paramount importance to me. 
+      <br></br>
+      My values are integrity, kindness and honesty. 
+      <br></br>
+      <img src={flag}></img>
+      <br></br>
+      I work hard and do my best, I'm shy but a quick learner. 
+      My biggest strengths are innovation, creativity and determination. 
+      These combine into my super strength: figuring it out. 
+      If I dont know how to do something, I figure out how to do it.
+      </>
+    )
+  },
+ 
+
 ];
-
-const posts = [post1, post2, post3];
-
 
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
@@ -59,8 +114,6 @@ export default function Blog() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        
-        
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -69,8 +122,6 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
-            
           </Grid>
         </main>
       </Container>

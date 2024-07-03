@@ -6,6 +6,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import Footer from './Footer';
 import Gamedev from './Gamedev';
+import Blender from './Blender';
 import Software from './Software';
 import Home from './Home';
 import Kit from './Images/Kit.png';
@@ -15,10 +16,11 @@ import PersonalTrainer from './PersonalTrainer';
 import ScrollToTop from "react-scroll-to-top";
 
 const sections = [
-
-  { title: 'Software', url: '/Software' },
   {title: 'Home', url: '/Home'},
-  { title: 'Gamedev', url: '/Gamedev' },
+  { title: 'Software Dev', url: '/Software' },
+  { title: 'Game Dev', url: '/Gamedev' },
+  {title: 'Blender', url: '/Blender'},
+  
   
 ];
 
@@ -40,6 +42,7 @@ function App() {
               <Route path="/Software" element={<Software />} />
               <Route path="/Gamedev" element={<Gamedev />} />
               <Route path="/Home" element={<Home />}></Route>
+              <Route path="/Blender" element={<Blender/>}></Route>
               <Route path="/Moodscape" element={<Moodscape/>}/>
               <Route path="/SalesSpot" element={<SalesSpot/>}/>
               <Route path="/PersonalTrainer" element={<PersonalTrainer/>}/>
@@ -47,7 +50,7 @@ function App() {
             
           </main>
         </Container>
-        <Footer title="Author: Kit Baker " description="24/06/2024" />
+        <Footer title="Author: Kit Baker " description="03/07/2024" />
       </Router>
     </ThemeProvider>
   );

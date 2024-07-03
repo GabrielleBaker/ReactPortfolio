@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
-import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 
 function MainFeaturedPost(props) {
   const { post } = props;
@@ -19,42 +20,32 @@ function MainFeaturedPost(props) {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundImage: `url(${post.image})`,
       }}
     >
-      {/* Increase the priority of the hero background image */}
-      {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
-      <Box
-        sx={{
-          position: 'absolute',
-          top: 0,
-          bottom: 0,
-          right: 0,
-          left: 0,
-          backgroundColor: 'rgba(0,0,0,.3)',
-        }}
-      />
-      <Grid container>
-        <Grid item md={6}>
-          <Box
-            sx={{
-              position: 'relative',
-              p: { xs: 3, md: 6 },
-              pr: { md: 0 },
-            }}
-          >
+      <Grid item xs={12} md={6}>
+        <Card sx={{ display: 'flex' }}>
+          <CardContent sx={{ flex: 1 }}>
+          <CardMedia
+            component="img"
+            sx={{  width:'40%' , display: { xs: 'none', sm: 'block'} }}
+            image={post.titleimage}
+          
+          />
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-              {post.title}
+             
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            <Typography variant="subtitle1" paragraph>
               {post.description}
             </Typography>
-            <Link variant="subtitle1" href="#">
-              {post.linkText}
-            </Link>
-          </Box>
-        </Grid>
-      </Grid>
+          </CardContent>
+          <CardMedia
+            component="img"
+            sx={{  width:'30%' , display: { xs: 'none', sm: 'block' } }}
+            image={post.image}
+            alt={post.imageLabel}
+          />
+        </Card>
+    </Grid>
     </Paper>
   );
 }
@@ -64,7 +55,6 @@ MainFeaturedPost.propTypes = {
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     imageText: PropTypes.string.isRequired,
-    linkText: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
 };
