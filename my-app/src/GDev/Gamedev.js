@@ -29,7 +29,7 @@ const featuredPosts = [
   {
     image: WHSDVATFeature,
     imageLabel: 'whsdvat',
-    url: '/SVAT'
+    url: '/SValley'
   },
   {
     image: LL,

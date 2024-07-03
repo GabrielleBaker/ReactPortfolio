@@ -15,9 +15,10 @@ import SalesSpot from './SwDev/SalesSpot';
 import PersonalTrainer from './SwDev/PersonalTrainer';
 import ScrollToTop from "react-scroll-to-top";
 import SukiScroller from './GDev/SukiScroller';
-import SVAH from './GDev/SVAH';
+import SValley from './GDev/SValley';
 import Lavaland from './GDev/LavaLand';
 import SmallWorld from './GDev/SmallWorld';
+
 
 const sections = [
   {title: 'Home', url: '/Home'},
@@ -49,7 +50,7 @@ function App() {
               <Route path="/Gamedev" element={<Gamedev />} />
               <Route path="/SukiScroller" element={<SukiScroller/>}/>
               <Route path="/Lavaland" element={<Lavaland/>}/>
-              <Route path="/SVAH" element={<SVAH/>}/>
+              <Route path="/SValley" element={<SValley/>}/>
               <Route path="/SmallWorld" element={<SmallWorld/>}/>
 
               <Route path="/Home" element={<Home />}></Route>
