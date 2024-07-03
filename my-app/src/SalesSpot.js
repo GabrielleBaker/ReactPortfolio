@@ -2,8 +2,8 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CarouselComponent from './Carousel';
-import YTComponent from './YTVideo';
+import CarouselComponent from './components/Carousel';
+import YTComponent from './components/YTVideo';
 import Spot from './Images/Softwaredev/Salesspot/Spot.png';
 import sscal from './Images/Softwaredev/Salesspot/sscal.png';
 import sscust from './Images/Softwaredev/Salesspot/sscust.png';
@@ -23,7 +23,7 @@ import ssolist from './Images/Softwaredev/Salesspot/ssolist.png';
 import ssorders from './Images/Softwaredev/Salesspot/ssorders.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Button from '@mui/material/Button';
-import GHButton from './GithubButton';
+import GHButton from './components/GithubButton';
 
 //images for the carousel
 const images =[

@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MSAPP from './Images/Softwaredev/Moodscape/MSAPP.png';
 import Splash from './Images/Softwaredev/Moodscape/Splash.jpg';
-import CarouselComponent from './Carousel';
+import CarouselComponent from './components/Carousel';
 import signup from './Images/Softwaredev/Moodscape/signup.jpg';
 import login from './Images/Softwaredev/Moodscape/login.jpg';
 import newlogform from './Images/Softwaredev/Moodscape/newlogform.jpg';
@@ -14,8 +14,8 @@ import calendar from './Images/Softwaredev/Moodscape/calendar.jpg';
 import modalcalendar from './Images/Softwaredev/Moodscape/modalcalendar.jpg';
 import helplines from './Images/Softwaredev/Moodscape/helplines.jpg';
 import mapmodal from './Images/Softwaredev/Moodscape/mapmodal.jpg';
-import YTComponent from './YTVideo';
-import GHButton from './GithubButton';
+import YTComponent from './components/YTVideo';
+import GHButton from './components/GithubButton';
 
 //images for the carousel
 const images =[

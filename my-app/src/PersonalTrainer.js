@@ -2,8 +2,8 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CarouselComponent from './Carousel';
-import YTComponent from './YTVideo';
+import CarouselComponent from './components/Carousel';
+import YTComponent from './components/YTVideo';
 import trainerhome from './Images/Softwaredev/Trainer/trainerhome.png';
 import calendar from './Images/Softwaredev/Trainer/calendar.png';
 import graphs from './Images/Softwaredev/Trainer/graphs.png';
@@ -13,7 +13,7 @@ import tr from './Images/Softwaredev/Trainer/tr.png';
 import trainerft from './Images/Softwaredev/Trainer/trainerft.png';
 import traininglog from './Images/Softwaredev/Trainer/traininglog.png'
 import customers from './Images/Softwaredev/Trainer/customers.png';
-import GHButton from './GithubButton';
+import GHButton from './components/GithubButton';
 
 //images for the carousel
 const images =[
