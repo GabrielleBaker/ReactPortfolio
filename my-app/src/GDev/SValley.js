@@ -66,10 +66,11 @@ export default function SVAT() {
           This game was made using a variety of sprites from the Unity Asset Store.
              </p>
 
+
         <h2>Try it out: </h2>
         <UnityEmbedding 
         link={'https://play.unity.com/webgl/4c1edf66-6920-4d54-9df9-82158116d6a3?screenshot=false&embedType=embed'}></UnityEmbedding>
-       
+    
         <h3>Features & Implementation:</h3>
           <p>
           2D Game developed with Unity Engine
