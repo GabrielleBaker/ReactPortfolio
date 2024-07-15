@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MainFeaturedPost from './components/MainFeaturedPost';
 import FeaturedPost from './components/FeaturedPost';
-import  Kit from './Images/KitPFP.jpeg';
+import  Kit from './Images/Kitpic.jpeg';
 import AboutKitt from './Images/AboutKitt.png';
 import flag from './Images/flag.png';
 
@@ -13,7 +13,7 @@ const mainFeaturedPost = {
   titleimage: AboutKitt,
   description:(
     <>
-    Kit (they/them) final year student at 
+    Kit, final year student at 
     <a href='https://www.haaga-helia.fi/en' 
         target="_blank"
         rel="noopener noreferrer"
