@@ -19,7 +19,7 @@ const images =[
 
 const defaultTheme = createTheme();
 
-export default function ArtStudio() {
+export default function Clock() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
