@@ -18,7 +18,10 @@ import SukiScroller from './GDev/SukiScroller';
 import SValley from './GDev/SValley';
 import Lavaland from './GDev/LavaLand';
 import SmallWorld from './GDev/SmallWorld';
-
+import ArtStudio from './Blender/ArtStudio';
+import Clock from './Blender/Clock';
+import ShowRoom from './Blender/ShowRoom';
+import Magnet from './Blender/Magnet';
 
 const sections = [
   {title: 'Home', url: '/Home'},
@@ -56,6 +59,10 @@ function App() {
               <Route path="/Home" element={<Home />}></Route>
 
               <Route path="/Blender" element={<Blender/>}></Route>
+              <Route path="/ArtStudio" element={<ArtStudio/>}/>
+              <Route path="/Magnet" element={<Magnet/>}/>
+              <Route path="/Clock" element={<Clock/>}/>
+              <Route path="/ShowRoom" element={<ShowRoom/>}/>
               
 
             </Routes>

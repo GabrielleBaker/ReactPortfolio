@@ -4,33 +4,37 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FeaturedPostsw from '../components/FeaturedPostSw';
-import WHSDVATFeature from '../Images/Gamedev/WHSDVAT/WHSDVATFeature.png'
+import ArtStudio from '../Images/Blender/Room/ArtStudio.png'
 import Featuredblnd from '../Images/Blender/AFTBlnd.png';
 import Box from '@mui/material/Box';
-import SSFeatured from '../Images/Gamedev/Suki/SSFeatured.png'
-import SmallWorld from '../Images/Gamedev/SmallWorld/SmallWorld.png';
-import LL from '../Images/Gamedev/Lavaland/LL.png';
+import Showroom from '../Images/Blender/Cutlery/Showroom.png';
+import Magnet from '../Images/Blender/Magnet/Magnet.png';
+import Clock from '../Images/Blender/Clock/Clock.png';
 //blender project section
 
 //featured projects
 const featuredPosts = [
   {
-    image: SSFeatured,
-    imageLabel: 'Suki Scroller',
+    image: ArtStudio,
+    imageLabel: 'ArtStudio',
+    url: '/ArtStudio'
     
   },
   {
-    image: SmallWorld,
-    imageLabel: 'Small World',
+    image: Showroom,
+    imageLabel: 'Cutlery Set',
+    url: '/ShowRoom'
   },
   {
-    image: WHSDVATFeature,
-    imageLabel: 'whsdvat',
+    image: Clock,
+    imageLabel: 'Clock',
+    url: '/Clock'
   },
   {
-    image: LL,
-    imageLabel: 'Lavaland'
-  }
+    image: Magnet,
+    imageLabel: 'Magnet',
+    url: '/Magnet'
+  },
 ];
 
 const defaultTheme = createTheme();
