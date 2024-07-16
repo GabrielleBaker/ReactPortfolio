@@ -36,7 +36,8 @@ function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Router>
+      <Router basename="/ReactPortfolio" //set all routes relative to the repo on git
+      >
         <Container maxWidth="lg">
           <Header image={Kit} sections={sections} />
           <main>
@@ -45,6 +46,7 @@ function App() {
           // scroll to top button for all pages
           />
             <Routes>
+              <Route path="/" element={<Home/>}></Route>
               <Route path="/Software" element={<Software />} />
               <Route path="/Moodscape" element={<Moodscape/>}/>
               <Route path="/SalesSpot" element={<SalesSpot/>}/>
@@ -69,7 +71,7 @@ function App() {
             
           </main>
         </Container>
-        <Footer title="Author: Kit Baker " description="03/07/2024" />
+        <Footer title="Author: Kit Baker " description="16/07/2024" />
       </Router>
     </ThemeProvider>
   );
