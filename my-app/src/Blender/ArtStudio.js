@@ -102,7 +102,7 @@ export default function ArtStudio() {
 
         <h2>Project & Course Grading</h2>
           <p>
-            Project Grade: 54/60
+            Project Grade: 54/60, 90%
             <br></br>
             Course Grade: 5
           </p>

@@ -27,7 +27,7 @@ const mainFeaturedPost = {
         </a>
     <br></br>
     Majoring in Software Development, 
-    with special interest in Video Game Design & Development.
+    with special interest in Video Game Design & Development and 3D modeling.
     <br></br> 
     Residing in the Helsinki area since 2020 with my partner and our dog.
     </>

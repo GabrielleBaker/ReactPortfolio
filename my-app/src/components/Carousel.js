@@ -31,7 +31,8 @@ export default function CarouselComponent({images}) {
                         objectFit: 'contain' //cover will crop the image
                       }}
                     />
-                <p className="legend">{image.legend}</p>
+        {//  <p className="legend">{image.legend}</p>
+        }      
             </div>)}
             </Carousel>
 
@@ -41,7 +42,7 @@ export default function CarouselComponent({images}) {
           PropTypes.shape({
             src: PropTypes.string.isRequired,
             alt: PropTypes.string,
-            legend: PropTypes.string,
+         //   legend: PropTypes.string,
           })
         ).isRequired,
       };
