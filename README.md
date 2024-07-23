@@ -1,1 +1,1 @@
-View my portfolio here: 
+View my portfolio here: https://gabriellebaker.github.io/ReactPortfolio/
